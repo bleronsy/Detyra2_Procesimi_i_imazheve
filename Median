@@ -1,0 +1,4 @@
+filter_size = 3;
+filter_matrix = ones(filter_size) / filter_size^2;
+filtered_img = medfilt2(I, [filter_size filter_size]);
+imshow(filtered_img);
